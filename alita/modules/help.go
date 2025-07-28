@@ -30,20 +30,20 @@ var HelpModule = moduleStruct{
 }
 
 const (
-	aboutText = "Info & About\n\nHere are some of the FAQs about Alita."
-	startHelp = "Hey there! My name is Alita ✨.\n" +
+	aboutText = "Info & About\n\nHere are some of the FAQs about MissLisa."
+	startHelp = "Hey there! My name is Lisa ✨.\n" +
 		"I'm here to help you manage your groups!\n" +
 		"Hit /help to find out more about how to use me to my full potential.\n" +
 		"Join my <a href='https://t.me/DivideProjects'>News Channel</a> to get information on all the latest updates."
 	mainhlp = "Hey %s!\n" +
-		"My name is Alita ✨.\n\n" +
+		"My name is Lisa ✨.\n\n" +
 		"I am a group management bot, here to help you get around and keep the order in your groups!\n" +
 		"I have lots of handy features, such as flood control, a warning system, a note keeping system, " +
-		"and even predetermined replies on certain keywords.\n\n" +
+		"and even predetermined replies on certain keywords,Thanks to Divide Projects.\n\n" +
 		"<b>Helpful commands</b>:\n" +
 		" - /start: Starts me! You've probably already used this!\n" +
 		" - /help: Sends this message; I'll tell you more about myself!\n" +
-		" - /donate: Gives you info on how to support me and my creator.\n\n" +
+		" - /donate: Gives you info on how to support me and my Original creator.\n\n" +
 		"All commands can be used with the following: / or !"
 )
 
@@ -68,12 +68,12 @@ var (
 			},
 			{
 				{
-					Text: "News Channel 📢",
-					Url:  "https://t.me/DivideProjects",
+					Text: "My Master",
+					Url:  "https://t.me/CyberPunk_25",
 				},
 				{
 					Text: "Support Group 👥",
-					Url:  "https://t.me/DivideSupport",
+					Url:  "https://t.me/MissLisaSupport",
 				},
 			},
 			{
@@ -102,11 +102,11 @@ var (
 			{
 				{
 					Text: "➕ Add me to chat!",
-					Url:  "https://t.me/Alita_Robot?startgroup=botstart",
+					Url:  "https://t.me/MissLisaRobot?startgroup=botstart",
 				},
 				{
 					Text: "Support Group 👥",
-					Url:  "https://t.me/DivideSupport",
+					Url:  "https://t.me/MissLisaSupport",
 				},
 			},
 			{
@@ -346,7 +346,7 @@ func (moduleStruct) start(b *gotgbot.Bot, ctx *ext.Context) error {
 			log.Info("sed")
 		}
 	} else {
-		_, err := msg.Reply(b, "Hey :) PM me if you have any questions on how to use me!", helpers.Shtml())
+		_, err := msg.Reply(b, "Heya, PM me if you have any questions on how to use me!", helpers.Shtml())
 		if err != nil {
 			log.Error(err)
 			return err
@@ -411,7 +411,7 @@ func (moduleStruct) botConfig(b *gotgbot.Bot, ctx *ext.Context) error {
 		iKeyboard = [][]gotgbot.InlineKeyboardButton{
 			{
 				{
-					Text: "➕ Add Alita to chat!",
+					Text: "➕ Add Lisa to chat!",
 					Url:  fmt.Sprintf("https://t.me/%s?startgroup=botstart", b.Username),
 				},
 			},
