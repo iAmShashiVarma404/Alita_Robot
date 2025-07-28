@@ -43,7 +43,7 @@ const (
 		"<b>Helpful commands</b>:\n" +
 		" - /start: Starts me! You've probably already used this!\n" +
 		" - /help: Sends this message; I'll tell you more about myself!\n" +
-		" - /donate: Gives you info on how to support me and my Original creator.\n\n" +
+		" - /donate: Gives you info about my Original creator from whom i cloned.\n\n" +
 		"All commands can be used with the following: / or !"
 )
 
